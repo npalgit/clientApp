@@ -24,6 +24,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.dropdownService.getFirstDropDown()
       .subscribe(data => this._firstDD = data);
+      
     this.randomstringService.getRandomStrings()
       .subscribe(data => this._randStrings = data);    
   }
