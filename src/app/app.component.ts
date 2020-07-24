@@ -76,7 +76,6 @@ export class AppComponent implements OnInit {
     return this._matchedStrings;
   }
   _validation() {
-    debugger
     if(this._randomTextSelected.length > 0 && this.selFirstDDId!='0' && this.selSecondDDId!='0' && this.selThirdDDId!='0') {
       this.disableButton = false;
     }
