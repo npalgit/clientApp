@@ -1,0 +1,12 @@
+<div *ngIf="isShowContent;then content else other_content"></div>    
+<ng-template #content>
+    <div> 
+        <h2>Form Values</h2><hr>
+        <p> Random Text: {{ _randomTextSelected }}</p>
+        <p> First Drop Down: {{ selFirstDDTxt}}</p>
+        <p> Second Drop Down: {{ selSecondDDTxt }}</p>
+        <p> Third Drop Down: {{ selThirdDDTxt }}</p>
+    </div>
+</ng-template>
+<ng-template #other_content>Please Filup The Form</ng-template>
+<a [routerLink]='routerLinkVariable'>Go To Form</a>
